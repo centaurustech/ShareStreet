@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Economica:400,700);
+
+body {
+    background: 
+        linear-gradient( rgba(0, 42, 62, 1), transparent 90%), 
+        linear-gradient(0deg, rgba(0, 100, 200, 0.9), transparent 100%),              url('https://download.unsplash.com/30/ny-filtered.jpg');
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.header-img {
+    margin: 0 auto;
+    padding: 10vh;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.landing-icons h2 {
+    font-family: 'Economica', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+footer {
+    color: white;
+    text-align: right;
+    padding: 0 2em;
+}
