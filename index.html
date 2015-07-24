@@ -11,10 +11,13 @@
     <title>ShareStreet</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/component.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <script src="js/modernizr.custom.js"></script>
     <script src="js/component.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -26,23 +29,25 @@
 
 
             <div class="row landing-icons">
-                <div class="col-xs-4 col-md-4">
-                    <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5c">
-                        <a href="#how-it-works" class="hi-icon hi-icon-cog"></a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                        <a href="#how-it-works" class="hi-icon icon-cog-alt"></a>
                     </div>
-                    <h2 align="center">How it works</h2>
+                    <h2 align="center">How it Works</h2>
+
                 </div>
 
-                <div class="col-xs-4 col-md-4">
-                    <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5c">
-                        <a href="#about" class="hi-icon hi-icon-support"></a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                        <a href="#about" class="hi-icon icon-info"></a>
                     </div>
                     <h2 align="center">About</h2>
+
                 </div>
 
-                <div class="col-xs-4 col-md-4">
-                    <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5c">
-                        <a href="#contact" class="hi-icon hi-icon-mail"></a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                        <a href="#contact" class="hi-icon icon-user"></a>
                     </div>
                     <h2 align="center">Contact</h2>
                 </div>
@@ -53,20 +58,75 @@
     <section id="how-it-works">
         <div class="container">
             <h1>How it works</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at malesuada ex. Mauris tincidunt, tellus at fringilla pretium, justo diam rhoncus sapien, sit amet maximus mauris tortor et magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas nec commodo eros. Aliquam odio purus, congue interdum imperdiet sit amet, porttitor pharetra nisl. Donec enim massa, accumsan a blandit id, consectetur in justo. Duis semper nibh mattis lectus tempus dictum in quis dolor. Nunc aliquet eros sit amet elit accumsan, vel porta velit egestas. Cras tristique lobortis vehicula. Vestibulum mattis blandit enim eu faucibus. Morbi accumsan tellus vitae velit facilisis interdum. Pellentesque vel nisl porttitor, mollis diam vitae, imperdiet dolor. Curabitur sit amet purus et velit facilisis scelerisque. Integer erat nunc, semper a ligula in, tincidunt bibendum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+            <br>
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#raise-capital" data-toggle="tab">Raise Capital</a></li>
-                <li><a href="#invest" data-toggle="tab">Invest</a></li>
-            </ul>         
+                <li class="active"><a href="#raise-capital" data-toggle="tab">Raise Capital</a>
+                </li>
+                <li><a href="#invest" data-toggle="tab">Invest</a>
+                </li>
+            </ul>
             <br>
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="raise-capital">
-                    <p>Pellentesque ultrices erat sollicitudin, commodo mi in, semper nulla. Morbi dapibus placerat ante id vulputate. Phasellus lacinia mi nibh, id faucibus sapien tincidunt nec. Ut sed justo luctus, aliquet odio a, pretium urna. Duis eu lectus sed nisi dignissim suscipit. Vestibulum at erat vel elit fringilla mattis. Nam eu purus vestibulum, egestas massa et, blandit turpis. Ut tincidunt tortor nec nunc accumsan gravida. Etiam egestas massa in interdum bibendum. Proin cursus ultricies mattis. Integer rhoncus purus vel ultrices volutpat. Quisque ante nisi, condimentum vel pharetra ac, vulputate nec nisi. Integer eros purus, accumsan at justo suscipit, porttitor tempus tellus. Curabitur tortor nibh, laoreet quis quam eget, lobortis placerat mi. Quisque congue erat sit amet dapibus euismod.</p>
+                    <ol>
+                        <li>
+                            <h3>Submit Your Application</h3>
+                            <p>If you have a real estate project that you
+                                would like to raise funds for, simply follow
+                                our application process to submit your
+                                proposal to our team.</p>
+                            <i class=""></i>
+                        </li>
+
+                        <li>
+                            <h3>Wait for Approval</h3>
+                            <p>Once your application has been properly submitted,
+                                our team will do our due diligence to thoroughly
+                                review and verify your proposal.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Monitor Funding Goals</h3>
+                            <p>Upon acceptance, as a borrower, you will be
+                                able to stay up-to-date on your funding
+                                goal and monitor investor progress.
+                            </p>
+                        </li>
+                    </ol>
                 </div>
-                
+
                 <div class="tab-pane" id="invest">
-                    <p>Integer faucibus molestie orci, id molestie justo congue quis. Donec eget ultricies felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tempus suscipit leo a semper. Duis lectus quam, consequat id velit tempor, commodo sollicitudin libero. Nunc sollicitudin purus vel quam elementum facilisis. Fusce luctus sem risus, quis pellentesque nunc dapibus ac. Vestibulum porttitor odio eros, at varius leo consequat id. Proin sit amet eros sit amet lacus iaculis ornare. Suspendisse sit amet sem rhoncus, ullamcorper nibh viverra, consectetur mauris. Suspendisse vel pretium leo. Ut vel tempus risus.</p>
+                    <ol>
+                        <li>
+                            <h3>Browse Investments</h3>
+                            <p>Once you've joined our online community of
+                                real estate investors, you will be able
+                                to browse the available projects on our
+                                platform. You will have access to view
+                                the information on the project, the management
+                                team and the required funding.</p>
+                        </li>
+
+                        <li>
+                            <h3>Invest</h3>
+                            <p>If you find a project that interests you, you
+                                can simply follow our investment process
+                                and have your funds capitalized in no time.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Manage your investments</h3>
+                            <p>Continue to view and manage your investments
+                                online through your ShareStreet account.
+                                For any questions, comments or concerns,
+                                visit our contact page to see how you can
+                                get in touch with a service representative.
+                            </p>
+                        </li>
+                    </ol>
                 </div>
             </div>
 
@@ -76,11 +136,38 @@
     <section id="about">
         <div class="container alt">
             <h1>About</h1>
-            <p>In nibh nisi, rutrum eget velit posuere, euismod auctor dui. Donec ultricies ornare velit, ac porta diam ullamcorper a. Donec et erat nibh. Nam auctor nunc non pellentesque placerat. Etiam scelerisque, turpis nec condimentum lacinia, sapien nibh hendrerit lacus, vehicula vehicula risus enim a augue. Pellentesque nisi nulla, accumsan vel sem quis, ullamcorper consectetur arcu. Cras ornare libero ut sapien condimentum imperdiet. Morbi tristique justo condimentum, bibendum neque rutrum, congue ligula. Phasellus condimentum dignissim dolor rutrum congue. Praesent efficitur consectetur turpis quis porttitor. Nam nisl magna, mattis nec ultricies eget, laoreet eget ipsum. In hac habitasse platea dictumst. Sed hendrerit purus quis tincidunt lacinia. Duis porttitor efficitur dolor nec posuere. Fusce semper rutrum nunc at tincidunt.</p>
+            <br>
+            <p>ShareStreet is an investment platform that provides investors
+                with the opportunity to fund real estate projects.</p>
 
-            <p>Curabitur ut tempor magna. Ut blandit tristique arcu, at suscipit metus fermentum sed. Sed mattis scelerisque metus ac consectetur. Suspendisse pharetra interdum augue. Pellentesque rhoncus lorem accumsan mi porttitor mollis eu sagittis nibh. Phasellus maximus arcu non elit dictum, eget laoreet nibh faucibus. Duis vitae magna sit amet velit hendrerit gravida. Aenean malesuada, neque rutrum tempor porttitor, arcu arcu condimentum massa, eu tincidunt nibh metus in massa. Vivamus eleifend suscipit blandit. Morbi pulvinar, felis pellentesque bibendum commodo, lacus tellus malesuada massa, eget venenatis magna est ac dui. Suspendisse at tellus augue. Pellentesque ultrices, tellus quis ultrices facilisis, elit massa auctor tortor, vitae sagittis odio nibh venenatis lorem. Maecenas quis metus eu enim tempor bibendum. Nullam eu lectus elit. Mauris malesuada condimentum egestas.</p>
+            <p>We believe that by digitalising the process of real estate
+                investing, we are giving projects a vast horizon of opportunities
+                to raise capital while providing investors with the chance
+                to participate in such projects they normally wouldn’t
+                have access to.
+            </p>
 
-            <p>Nulla hendrerit nulla ut eros congue pharetra. Nam sed cursus justo, a commodo ipsum. Vestibulum ante ex, commodo consectetur feugiat vel, lobortis ac purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas sollicitudin non elit at ultricies. Praesent eleifend ac dolor sed viverra. Suspendisse metus quam, luctus sit amet nisl a, suscipit dictum elit.</p>
+            <p>In the long run, our aim is to provide everyone with an equal
+                chance to invest in attractive real estate investments
+                while streamlining the process of investing in real estate
+                online. </p>
+
+            <p>Cras id ullamcorper velit, nec tincidunt lorem. Aliquam quis
+                odio lectus. Cras venenatis sapien a cursus malesuada.
+                Aliquam molestie ligula in efficitur dignissim. Phasellus
+                consectetur fermentum justo, non scelerisque ex faucibus
+                nec. Cras dui augue, pretium a tincidunt vitae, tincidunt
+                vel nibh. Aenean hendrerit volutpat eros, ut ultricies
+                leo scelerisque sed. Vestibulum nulla nisi, consectetur
+                vitae dolor sit amet, vehicula lobortis neque. Vestibulum
+                facilisis ante vel massa rutrum, sed viverra neque maximus.
+                In tristique ac libero sit amet aliquam. Praesent imperdiet,
+                nisi sit amet lacinia finibus, risus purus sagittis elit,
+                in pulvinar nunc mi quis diam. Morbi congue efficitur odio,
+                a malesuada metus varius nec. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Phasellus egestas urna sed accumsan imperdiet. Proin pellentesque
+                velit nec diam tristique iaculis.</p>
         </div>
     </section>
 
@@ -113,7 +200,7 @@
                         <textarea id="sender-message" class="form-control" rows="5"></textarea>
                     </div>
                 </div>
-            
+
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button type="submit" class="btn btn-primary">Submit</button>
