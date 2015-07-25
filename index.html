@@ -16,7 +16,6 @@
 
     <script src="js/modernizr.custom.js"></script>
     <script src="js/component.js"></script>
-    <script src="js/animatescroll.min.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
@@ -57,9 +56,9 @@
 
     <section id="how-it-works">
         <div class="container">
-            <h1>How it works</h1>
+            <h1>How it Works</h1>
             <br>
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs nav-justified">
                 <li class="active"><a href="#raise-capital" data-toggle="tab">Raise Capital</a>
                 </li>
                 <li><a href="#invest" data-toggle="tab">Invest</a>
@@ -96,7 +95,7 @@
                     </ol>
                 </div>
 
-                <div class="tab-pane" id="invest">
+                <div class="tab-pane fade in" id="invest">
                     <ol>
                         <li>
                             <h3>Browse Investments</h3>
@@ -137,37 +136,34 @@
         <div class="container alt">
             <h1>About</h1>
             <br>
-            <p>ShareStreet is an investment platform that provides investors
-                with the opportunity to fund real estate projects.</p>
+            <p>ShareStreet is an investment platform that connects investors
+                with opportunities to fund real estate projects. We were
+                founded when we learned there was a select group of investors
+                who were reaping the benefits of highly attractive real
+                estate investments. </p>
 
-            <p>We believe that by digitalising the process of real estate
-                investing, we are giving projects a vast horizon of opportunities
-                to raise capital while providing investors with the chance
-                to participate in such projects they normally wouldn’t
-                have access to.
+            <p>We decided that by building an online platform for real estate
+                under the crowdfunding exemption, we would tap into a large
+                online investor base and give everyone an opportunity to
+                invest in such attractive real estate investments.
             </p>
 
-            <p>In the long run, our aim is to provide everyone with an equal
-                chance to invest in attractive real estate investments
-                while streamlining the process of investing in real estate
-                online. </p>
+            <p>We believe that this will be a valuable opportunity for existing
+                and emerging real estate investors, as well as those looking
+                to raise capital for their real estate projects. Due to
+                current regulations, however, ShareStreet is only targeted
+                to accredited and institutional investors. We look forward
+                to being a major player in real estate crowdfunding once
+                the exemption has been approved by the appropriate securities
+                regulators.
+            </p>
 
-            <p>Cras id ullamcorper velit, nec tincidunt lorem. Aliquam quis
-                odio lectus. Cras venenatis sapien a cursus malesuada.
-                Aliquam molestie ligula in efficitur dignissim. Phasellus
-                consectetur fermentum justo, non scelerisque ex faucibus
-                nec. Cras dui augue, pretium a tincidunt vitae, tincidunt
-                vel nibh. Aenean hendrerit volutpat eros, ut ultricies
-                leo scelerisque sed. Vestibulum nulla nisi, consectetur
-                vitae dolor sit amet, vehicula lobortis neque. Vestibulum
-                facilisis ante vel massa rutrum, sed viverra neque maximus.
-                In tristique ac libero sit amet aliquam. Praesent imperdiet,
-                nisi sit amet lacinia finibus, risus purus sagittis elit,
-                in pulvinar nunc mi quis diam. Morbi congue efficitur odio,
-                a malesuada metus varius nec. Class aptent taciti sociosqu
-                ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Phasellus egestas urna sed accumsan imperdiet. Proin pellentesque
-                velit nec diam tristique iaculis.</p>
+            <h2>Our Mission</h2>
+            <br>
+
+            <p>In the long run, our aim is to provide everyone with an equal
+                chance to invest in real estate while streamlining the
+                process of online investing.</p>
         </div>
     </section>
 
@@ -217,6 +213,30 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $(
+                'a[href*=#]:not([href=#invest]):not([href=#raise-capital])'
+            ).click(function() {
+                if (location.pathname.replace(/^\//,
+                        '') == this.pathname.replace(
+                        /^\//, '') && location.hostname ==
+                    this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target :
+                        $('[name=' + this.hash.slice(
+                            1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target
+                                .offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
