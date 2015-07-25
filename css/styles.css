@@ -131,12 +131,8 @@ textarea {
 }
 
 /* ========= FOOTER ========= */
-footer p {
-    color: #004471;
-}
-
 footer {
-    color: black;
+    color: #004471;
     background-color: #fff;
     text-align: right;
     padding: 0 2em;
