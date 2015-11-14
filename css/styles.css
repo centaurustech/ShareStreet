@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,600,700,500);
 
 a:hover,
 a:visited {
@@ -10,10 +11,6 @@ a:visited {
 .alt-li {
   background: #e8f3ff;
   padding: 5%;
-}
-::selection {
-    background: #004471;
-    color: #fff;
 }
 .btn-primary {
     background-color: #004471;
@@ -24,7 +21,7 @@ a:visited {
 }
 
 h1, h2, h3, h4, h5, h6, ol {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cabin', serif;
 }
 
 body, p {
@@ -57,19 +54,18 @@ body, p {
     padding: 0 5% 5%;
 }
 .header-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 4em;
+  font-family: 'Cabin', serif;
+  font-size: 3em;
   text-align: left;
   color: white;
   padding: 10% 10%;
 
 }
 .btn {
-  font-family: 'Roboto', serif;
-
+  font-family: 'Cabin', serif;
   font-size: 1.5em;
   text-transform: none;
-  padding: 20px 20px;
+  padding: 15px 40px;
 }
 .btn-1a:hover,
 .btn-1a:active {
@@ -110,9 +106,9 @@ body, p {
     font-size: 2em;
     font-weight: 500;
     padding: 5% 0;
-    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
 }
 
 /* ========= HOW IT WORKS ========= */

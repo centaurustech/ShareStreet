@@ -1071,19 +1071,19 @@
 }
 
 @-webkit-keyframes fillToRight {
-	to { 
+	to {
 		width: 100%;
 	}
 }
 
 @-moz-keyframes fillToRight {
-	to { 
+	to {
 		width: 100%;
 	}
 }
 
 @keyframes fillToRight {
-	to { 
+	to {
 		width: 100%;
 	}
 }
@@ -1118,19 +1118,19 @@
 }
 
 @-webkit-keyframes emptyBottom {
-	to { 
+	to {
 		height: 100%;
 	}
 }
 
 @-moz-keyframes emptyBottom {
-	to { 
+	to {
 		height: 100%;
 	}
 }
 
 @keyframes emptyBottom {
-	to { 
+	to {
 		height: 100%;
 	}
 }
@@ -1160,10 +1160,10 @@
 	-webkit-animation: scaleFade 0.5s forwards;
 	-moz-animation: scaleFade 0.5s forwards;
 	animation: scaleFade 0.5s forwards;
-} 
+}
 
 @-webkit-keyframes scaleFade {
-	50% { 
+	50% {
 		opacity: 1;
 		-webkit-transform: scale(1);
 	}
@@ -1174,7 +1174,7 @@
 }
 
 @-moz-keyframes scaleFade {
-	50% { 
+	50% {
 		opacity: 1;
 		-moz-transform: scale(1);
 	}
@@ -1185,7 +1185,7 @@
 }
 
 @keyframes scaleFade {
-	50% { 
+	50% {
 		opacity: 1;
 		transform: scale(1);
 	}
@@ -1228,24 +1228,24 @@
 	-webkit-animation: dropDown 0.3s forwards;
 	-moz-animation: dropDown 0.3s forwards;
 	animation: dropDown 0.3s forwards;
-} 
+}
 
 @-webkit-keyframes dropDown {
-	to { 
+	to {
 		opacity: 1;
 		-webkit-transform: scale(1);
 	}
 }
 
 @-moz-keyframes dropDown {
-	to { 
+	to {
 		opacity: 1;
 		-moz-transform: scale(1);
 	}
 }
 
 @keyframes dropDown {
-	to { 
+	to {
 		opacity: 1;
 		transform: scale(1);
 	}
@@ -1278,36 +1278,36 @@
 	-webkit-animation: dropDownFade 0.5s forwards;
 	-moz-animation: dropDownFade 0.5s forwards;
 	animation: dropDownFade 0.5s forwards;
-} 
+}
 
 @-webkit-keyframes dropDownFade {
-	50% { 
+	50% {
 		opacity: 1;
 		-webkit-transform: scale(1);
 	}
-	100% { 
+	100% {
 		opacity: 0;
 		-webkit-transform: scale(1.5);
 	}
 }
 
 @-moz-keyframes dropDownFade {
-	50% { 
+	50% {
 		opacity: 1;
 		-moz-transform: scale(1);
 	}
-	100% { 
+	100% {
 		opacity: 0;
 		-moz-transform: scale(1.5);
 	}
 }
 
 @keyframes dropDownFade {
-	50% { 
+	50% {
 		opacity: 1;
 		transform: scale(1);
 	}
-	100% { 
+	100% {
 		opacity: 0;
 		transform: scale(1.5);
 	}
@@ -1359,7 +1359,7 @@
 		-webkit-transform: translateY(50%);
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0);
 	}
@@ -1370,7 +1370,7 @@
 		-moz-transform: translateY(50%);
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		opacity: 1;
 		-moz-transform: translateY(0);
 	}
@@ -1381,7 +1381,7 @@
 		transform: translateY(50%);
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		opacity: 1;
 		transform: translateY(0);
 	}
@@ -1428,7 +1428,7 @@
 		-webkit-transform: scale(0);
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		opacity: 1;
 		-webkit-transform: scale(1);
 	}
@@ -1439,7 +1439,7 @@
 		-moz-transform: scale(0);
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		opacity: 1;
 		-moz-transform: scale(1);
 	}
@@ -1450,7 +1450,7 @@
 		transform: scale(0);
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		opacity: 1;
 		transform: scale(1);
 	}
@@ -1461,7 +1461,7 @@
 	position: relative;
 	max-width: 320px;
 	margin: 60px auto 0;
-} 
+}
 
 .trash-effect .icon-file {
 	font-size: 30px;
@@ -1546,7 +1546,7 @@
 	50% {
 		-webkit-transform: rotate(-35deg);
 	}
-	100% { 
+	100% {
 		-webkit-transform: rotate(0deg);
 	}
 }
@@ -1555,7 +1555,7 @@
 	50% {
 		-moz-transform: rotate(-35deg);
 	}
-	100% { 
+	100% {
 		-moz-transform: rotate(0deg);
 	}
 }
@@ -1564,7 +1564,7 @@
 	50% {
 		transform: rotate(-35deg);
 	}
-	100% { 
+	100% {
 		transform: rotate(0deg);
 	}
 }
