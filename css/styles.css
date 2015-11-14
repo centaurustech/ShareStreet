@@ -1,13 +1,15 @@
 /* ========= GENERAL ========= */
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
 
 a:hover,
 a:visited {
     text-decoration: none;
 }
-.alt {
-    color: #fff;
+.alt-li {
+  background: #e8f3ff;
+  padding: 5%;
 }
 ::selection {
     background: #004471;
@@ -21,20 +23,23 @@ a:visited {
     background-color: #005288;
 }
 
-body {
-  font-family: Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6, ol {
+  font-family: 'Playfair Display', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+body, p {
+  font-family: 'Open Sans', sans-serif;
 }
+
+
 
 /* ========= HEADER ========= */
 .cover-container {
-    background: linear-gradient(rgba(0, 43, 71, 0.9), transparent 100%), linear-gradient(0deg, rgba(52, 73, 130, 1.0), transparent 100%), url('../img/ny-filtered.jpg');
+    background:
+      linear-gradient(rgba(0, 66, 102, 1.0), transparent 100%),
+      linear-gradient(0deg, rgba(0, 66, 102, 1.0), transparent 100%),
+      url('../img/ny-filtered.jpg');
     background-size: cover;
-    height: 100vh;
-    display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
@@ -42,15 +47,37 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0 20%;
-    ;
+    padding: 1% 20% 3%;
     position: relative;
     display: inline-block;
 }
 .header-img {
-    margin: 0 auto;
-    width: auto;
+
+    width: 35%;
     padding: 0 5% 5%;
+}
+.header-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+  text-align: left;
+  color: white;
+  padding: 10% 10%;
+
+}
+.btn {
+  font-family: 'Roboto', serif;
+
+  font-size: 1.5em;
+  text-transform: none;
+  padding: 20px 20px;
+}
+.btn-1a:hover,
+.btn-1a:active {
+	color: #004266;
+	background: #fff;
+}
+.btn-1a:after {
+  color: #fff;
 }
 .landing-icons h2 {
     font-family: 'Roboto', sans-serif;
@@ -75,17 +102,32 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+#blurb {
+    background: url('../img/street-bg.jpg');
+    background-size: cover;
+    color: #ecf0f1;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 5% 0;
+    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+}
+
 /* ========= HOW IT WORKS ========= */
 #how-it-works {
-    padding: 2% 0;
-    -webkit-box-shadow: 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+  padding: 2%;
 }
+
+#how-it-works ul {
+  list-style-type: none;
+}
+
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
-    background-color: #004471;
+    background-color: #004266;
     color: #fff;
 }
 .nav-tabs>li>a {
@@ -103,22 +145,23 @@ h1, h2, h3, h4, h5, h6 {
 .tab-pane li p {
     font-size: 0.67em;
 }
-
-/* ========= ABOUT ========= */
-#about {
-    background: url('../img/streetview-blue.jpg');
-    background-size: cover;
-    padding: 2% 0;
-    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+.hiw-icon {
+  margin: 0 auto;
+  width: 50%;
 }
 
 /* ========= CONTACT ========= */
 #contact {
     padding: 2% 0;
+    background: url('../img/street-bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    color: #ecf0f1;
+    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
 }
-#contact-form input[type="text"],
+#ajax-contact input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
@@ -129,7 +172,7 @@ textarea {
     height: 200px;
     resize: vertical
 }
-.form-label {
+#ajax-contact .form-label {
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
@@ -142,14 +185,18 @@ textarea {
 
 /* ========= FOOTER ========= */
 footer {
-    color: #004471;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000000;
     text-align: right;
-    padding: 0 2em;
 }
 
 /* ========= MOBILE ========= */
 @media (max-width: 1000px) {
+    .header-img {
+      margin: 0 auto;
+        width: 100%;
+        padding: 5% 5% 5%;
+    }
     .hi-icon {
         width: 60px;
         height: 60px;
