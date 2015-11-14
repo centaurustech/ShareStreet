@@ -157,9 +157,9 @@ body, p {
     background-size: cover;
     background-position: center bottom;
     color: #ecf0f1;
-    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
 }
 #ajax-contact input[type="text"],
 input[type="email"],
@@ -181,6 +181,10 @@ textarea {
 }
 .control-label {
     font-size: 1em;
+}
+.footer-icon {
+  float: right;
+  width: 50%
 }
 
 /* ========= FOOTER ========= */
