@@ -1,29 +1,30 @@
 /* ========= GENERAL ========= */
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,600,700,500);
-
 a:hover,
 a:visited {
     text-decoration: none;
 }
 .alt-li {
-  background: #e8f3ff;
-  padding: 5% 0;
+    background: #e8f3ff;
+    padding: 5% 0;
 }
-
-h1, h2, h3, h4, h5, h6, ol {
-  font-family: 'Cabin', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol {
+    font-family: 'Cabin', serif;
 }
-
-body, p {
-  font-family: 'Open Sans', sans-serif;
+body,
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ========= HEADER ========= */
 .cover-container {
-    background:
-      linear-gradient(rgba(0, 66, 102, 1.0), transparent 100%),
-      linear-gradient(0deg, rgba(0, 66, 102, 1.0), transparent 100%),
-      url('../img/ny-filtered.jpg');
+    background: linear-gradient(rgba(0, 66, 102, 1.0), transparent 100%), linear-gradient(0deg, rgba(0, 66, 102, 1.0), transparent 100%), url('../img/header-bg.jpg');
     background-size: cover;
     text-align: center;
     vertical-align: middle;
@@ -37,34 +38,31 @@ body, p {
     display: inline-block;
 }
 .header-img {
-
+    pointer-events: none;
     width: 35%;
     padding: 0 5% 5%;
 }
 .header-text {
-
-  font-family: 'Cabin', serif;
-  font-size: 3em;
-  text-align: left;
-  color: white;
-  padding: 10% 10%;
-
+    font-family: 'Cabin', serif;
+    font-size: 3em;
+    text-align: left;
+    color: white;
+    padding: 10% 10%;
 }
 .btn {
-  font-family: 'Cabin', serif;
-  font-size: 1.5em;
-  text-transform: none;
-  padding: 15px 40px;
-  background-color: none;
+    font-family: 'Cabin', serif;
+    font-size: 1.5em;
+    text-transform: none;
+    padding: 15px 40px;
+    background-color: none;
 }
 .btn-1a:hover {
-	color: #004266;
-	background: #fff;
+    color: #004266;
+    background: #fff;
 }
 .btn:focus {
-  color: #fff;
+    color: #fff;
 }
-
 #about {
     background: url('../img/street-bg.jpg');
     background-size: cover;
@@ -80,13 +78,11 @@ body, p {
 
 /* ========= HOW IT WORKS ========= */
 #how-it-works {
-  padding: 2%;
+    padding: 2%;
 }
-
 #how-it-works ul {
-  list-style-type: none;
+    list-style-type: none;
 }
-
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
@@ -109,12 +105,13 @@ body, p {
     font-size: 0.67em;
 }
 .hiw-icon {
-  margin: 0 auto;
-  width: 75%;
+    margin: 0 auto;
+    width: 55%;
+    pointer-events: none;
 }
 
 /* ========= CONTACT ========= */
-#join{
+#join {
     padding-top: 2%;
     background: url('../img/street-bg2.jpg');
     background-size: cover;
@@ -125,36 +122,38 @@ body, p {
     box-shadow: inset 0px 0px 41px -2px rgba(0, 0, 0, 1);
 }
 #join form {
-  color: #000000;
-  margin: 0 auto;
+    color: #000000;
+    margin: 0 auto;
 }
+input,
+textarea,
+select {
+    background: #fff;
+    border: 3px solid #004266;
+    border-radius: 30px;
+    width: 400px;
+    margin: 5px 0;
+    padding: 5px 14px;
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
 
-input, textarea, select {
-  background: #fff;
-  border: 3px solid #004266;
-  border-radius: 30px;
-  width : 400px;
-  margin: 5px 0;
-  padding: 5px 14px;
+    -moz-box-sizing: border-box;
+    /* For legacy (Firefox <29) Gecko based browsers */
 
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 .button {
-  width: 150px;
-  padding: 7px;
-  margin: 5% 25%;
-  font-weight: 400;
+    width: 150px;
+    padding: 7px;
+    margin: 5% 25%;
+    font-weight: 400;
 }
-
 .footer-brand {
-  margin: 15% auto 10%;
-  width: 50%;
+    margin: 15% auto 10%;
+    width: 50%;
 }
 ul.footer-social {
-  padding: 0;
+    padding: 0;
 }
 .footer-social li {
     text-decoration: none;
@@ -162,7 +161,6 @@ ul.footer-social {
     padding: 0;
     margin: 0 35px;
     font-size: 40px;
-
 }
 .footer-social a {
     text-decoration: none;
@@ -174,7 +172,7 @@ ul.footer-social {
 
 /* ========= FOOTER ========= */
 footer {
-  padding-top: 5px;
+    padding-top: 5px;
     color: #fff;
     text-align: right;
 }
@@ -182,42 +180,37 @@ footer {
 /* ========= MOBILE ========= */
 @media (max-width: 768px) {
     .header-img {
-      margin: 0 auto;
+        margin: 0 auto;
         width: 100%;
         padding: 5% 5% 5%;
     }
-
-    input, textarea, select {
-      width : 250px;
-      margin: 5px 0;
-      padding: 5px 14px;
+    input,
+    textarea,
+    select {
+        width: 250px;
+        margin: 5px 0;
+        padding: 5px 14px;
     }
-
     .header-text {
-      font-size: 1.5em;
-      text-align: left;
-      margin: 0 auto;
-      padding: 10% 0%;
+        font-size: 1.5em;
+        text-align: left;
+        margin: 0 auto;
+        padding: 10% 0%;
     }
-
     .btn {
-      padding: 5px 10px;
-      font-size: 1em;
+        padding: 5px 10px;
+        font-size: 1em;
     }
-
     h2 {
-      font-size: 20px;;
+        font-size: 20px;
     }
-
     h3 {
-      font-size: 15px;
+        font-size: 15px;
     }
-
     .footer-social li {
-      margin: 0 10px;
+        margin: 0 10px;
     }
-
-     h1 {
-      font-size: 25px;
+    h1 {
+        font-size: 25px;
     }
 }
