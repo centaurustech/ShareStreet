@@ -1,7 +1,4 @@
 /* ========= GENERAL ========= */
-@import url(http://fonts.googleapis.com/css?family=Roboto:100);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,600,700,500);
 
 a:hover,
@@ -10,7 +7,7 @@ a:visited {
 }
 .alt-li {
   background: #e8f3ff;
-  padding: 5%;
+  padding: 5% 0;
 }
 .btn-primary {
     background-color: #004471;
@@ -27,8 +24,6 @@ h1, h2, h3, h4, h5, h6, ol {
 body, p {
   font-family: 'Open Sans', sans-serif;
 }
-
-
 
 /* ========= HEADER ========= */
 .cover-container {
@@ -148,7 +143,7 @@ body, p {
 
 /* ========= CONTACT ========= */
 #contact {
-    padding: 2% 0;
+    padding-top: 2%;
     background: url('../img/street-bg.jpg');
     background-size: cover;
     background-position: center bottom;
@@ -178,15 +173,24 @@ textarea {
 .control-label {
     font-size: 1em;
 }
-.footer-icon {
-  float: right;
-  width: 50%
+
+.footer-brand {
+  margin: 4% auto;
+  width: 50%;
+}
+.footer-social {
+  display: table;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.footer-social li {
+  display: inline-block;
 }
 
 /* ========= FOOTER ========= */
 footer {
+  padding-top: 3%;
     color: #fff;
-    background-color: #000000;
     text-align: right;
 }
 
@@ -196,23 +200,5 @@ footer {
       margin: 0 auto;
         width: 100%;
         padding: 5% 5% 5%;
-    }
-    .hi-icon {
-        width: 60px;
-        height: 60px;
-    }
-    .hi-icon:before {
-        font-size: 30px;
-        line-height: 60px;
-    }
-    .hi-icon-wrap {
-        padding: 0 0;
-    }
-    .landing-icons h2 {
-        font-size: 1em;
-    }
-    .landing-icons a {
-        font-size: 30px;
-        line-height: 60px;
     }
 }
